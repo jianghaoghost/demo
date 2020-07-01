@@ -46,6 +46,7 @@ public class UtilsTest {
         String password="jianghao082435";
         String md5 = Md5Utils.getMD5(password);
         log.info("md5加密密文："+md5);
+        log.info("md5加密密文："+md5);
     }
 
     @Test
