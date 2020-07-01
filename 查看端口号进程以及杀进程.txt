@@ -1,0 +1,15 @@
+#查看端口的进程pid
+netstat -aon|findstr "端口号"
+#结束pid号的进程
+taskkill /pid  进程pid  /f
+
+#运行jar以及记录日志的方式(.out日志记录的日志文件)
+运行jar包指令：nohup java -jar XXX.jar >  日志文件.out &
+
+#nginx相关命令
+启动：start nginx
+重启：nginx -s reload
+停止：nginx -s stop 或 nginx -s quit
+
+#wsimport用法
+wsimport -encoding utf-8 -d D:\test -keep -verbose http://localhost:8088/ws/Webservice?wsdl
